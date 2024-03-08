@@ -35,3 +35,17 @@ while i < 5:
     i += 1
 else:
     print("else:", i)
+
+#watch out in the for loop, the else statement is executed a bit differently
+#it will not reiterate at range 5, i = 4
+#0
+#1
+#2
+#3
+#4
+#else: 4
+for i in range(5):
+    print(i)
+else:
+    print("else:", i)
+
