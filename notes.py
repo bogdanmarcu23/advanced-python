@@ -1,3 +1,11 @@
+#this will print the characters sequentially
+#end=""
+#OpenEDG Python Institute
+text = "OpenEDG Python Institute"
+for letter in text:
+    print(letter, end="")
+
+
 #int = float
 x = 1
 y = 1.0
@@ -49,3 +57,5 @@ for i in range(5):
 else:
     print("else:", i)
 
+for i in range(6, 1, -2):
+    print(i, end=" ")  # Outputs: 6, 4, 2
