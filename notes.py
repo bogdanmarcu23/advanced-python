@@ -108,3 +108,9 @@ list_3 = list_2
 del list_1[0]
 del list_2
 print(list_3)
+
+
+#The snippet produces a ten-element list filled with squares of ten integer numbers starting from zero.
+squares = [x ** 2 for x in range(10)]
+#The snippet makes a list with only the odd elements of the squares list.
+odds = [x for x in squares if x % 2 != 0 ]
