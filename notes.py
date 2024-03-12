@@ -100,3 +100,11 @@ my_list = ["A", "B", 1, 2]
 print("A" in my_list)  # outputs: True
 print("C" not in my_list)  # outputs: True
 print(2 not in my_list)  # outputs: False
+
+#prints ['B', 'C']
+list_1 = ["A", "B", "C"]
+list_2 = list_1
+list_3 = list_2
+del list_1[0]
+del list_2
+print(list_3)
