@@ -10,7 +10,6 @@ for letter in text:
 x = 1
 y = 1.0
 z = "1"
-
 x == y #True
 y == int(z) #True
 
@@ -69,7 +68,6 @@ l2 = l1
 del l1[0] # deletes 'car'
 print(l2) # outputs: ['bicycle', 'motor']
 
-
 #If you want to copy a list or part of the list, you can do it by performing slicing:
 colors = ['red', 'green', 'orange']
 
@@ -81,13 +79,11 @@ sample_list = ["A", "B", "C", "D", "E"]
 new_list = sample_list[2:-1]
 print(new_list)  # outputs: ['C', 'D']
 
-
 #The start and end parameters are optional when performing a slice: list[start:end]
 my_list = [1, 2, 3, 4, 5]
 slice_one = my_list[2: ]
 slice_two = my_list[ :2]
 slice_three = my_list[-2: ]
-
 print(slice_one)  # outputs: [3, 4, 5]
 print(slice_two)  # outputs: [1, 2]
 print(slice_three)  # outputs: [4, 5]
@@ -96,13 +92,11 @@ print(slice_three)  # outputs: [4, 5]
 my_list = [1, 2, 3, 4, 5]
 del my_list[0:2]
 print(my_list)  # outputs: [3, 4, 5]
-
 del my_list[:]
 print(my_list)  # deletes the list content, outputs: []
 
 #You can test if some items exist in a list or not using the keywords in and not in, e.g.:
 my_list = ["A", "B", 1, 2]
-
 print("A" in my_list)  # outputs: True
 print("C" not in my_list)  # outputs: True
 print(2 not in my_list)  # outputs: False
