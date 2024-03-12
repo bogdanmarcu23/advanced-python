@@ -88,12 +88,18 @@ print(slice_one)  # outputs: [3, 4, 5]
 print(slice_two)  # outputs: [1, 2]
 print(slice_three)  # outputs: [4, 5]
 
+#this prints
+# [2]
+my_list = [1,2,3,4]
+a = my_list[-3:-2]
+
 #You can delete slices using the del instruction:
 my_list = [1, 2, 3, 4, 5]
 del my_list[0:2]
 print(my_list)  # outputs: [3, 4, 5]
 del my_list[:]
 print(my_list)  # deletes the list content, outputs: []
+
 
 #You can test if some items exist in a list or not using the keywords in and not in, e.g.:
 my_list = ["A", "B", 1, 2]
@@ -114,3 +120,9 @@ print(list_3)
 squares = [x ** 2 for x in range(10)]
 #The snippet makes a list with only the odd elements of the squares list.
 odds = [x for x in squares if x % 2 != 0 ]
+
+#As list comprehensions can be nested, the inner part creates a row, and the outer part builds a list of rows.
+board = [[EMPTY for i in range(8)] for j in range(8)]
+
+
+
