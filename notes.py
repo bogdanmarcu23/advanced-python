@@ -36,7 +36,7 @@ print("Outside the loop.")
 #3
 #4
 #else: 5
-i = 5
+i = 0
 while i < 5:
     print(i)
     i += 1
