@@ -124,5 +124,14 @@ odds = [x for x in squares if x % 2 != 0 ]
 #As list comprehensions can be nested, the inner part creates a row, and the outer part builds a list of rows.
 board = [[EMPTY for i in range(8)] for j in range(8)]
 
+#bitwise operators
+#& requires exactly two 1s to provide 1 as the result; 1&0=0; 1&1=1
+#| requires at least one 1 to provide 1 as the result; 1|0=1; 0|0=0
+#^ requires exactly one 1 to provide 1 as the result. 1^0=1; 1^1=0
 
+#Binary left shift and binary right shift
+17 >> 1 → 17 // 2 (17 floor-divided by 2 to the power of 1) → 8 
+#(shifting to the right by one bit is the same as integer division by two)
+17 << 2 → 17 * 4 (17 multiplied by 2 to the power of 2) → 68 
+#(shifting to the left by two bits is the same as integer multiplication by four)
 
