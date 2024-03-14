@@ -135,3 +135,21 @@ board = [[EMPTY for i in range(8)] for j in range(8)]
 17 << 2 → 17 * 4 (17 multiplied by 2 to the power of 2) → 68 
 #(shifting to the left by two bits is the same as integer multiplication by four)
 
+#keyword argument passing
+#SyntaxError - a non-default argument (c) follows a default argument (b=2)
+def add_numbers(a, b=2, c):
+    print(a + b + c)
+add_numbers(a=1, c=3)
+
+#positional argument passing.
+def intro(a, b="Bond"):
+    print("My name is", b + ".", a + ".")
+intro("Susan") #My name is Bond. Susan.
+
+#It's important to remember that positional arguments mustn't follow keyword arguments. 
+def subtra(a, b):
+    print(a - b)
+subtra(5, b=2)    # outputs: 3
+subtra(a=5, 2)    # Syntax Error
+
+
