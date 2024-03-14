@@ -5,7 +5,6 @@ text = "OpenEDG Python Institute"
 for letter in text:
     print(letter, end="")
 
-
 #int = float
 x = 1
 y = 1.0
@@ -151,5 +150,14 @@ def subtra(a, b):
     print(a - b)
 subtra(5, b=2)    # outputs: 3
 subtra(a=5, 2)    # Syntax Error
+
+#None
+#if a function doesn't return a certain value using a return expression clause, 
+#it is assumed that it implicitly returns None
+def strange_function(n):
+    if(n % 2 == 0):
+        return True
+print(strange_function(2)) #True
+print(strange_function(1)) #None
 
 
