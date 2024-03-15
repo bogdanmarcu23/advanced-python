@@ -160,4 +160,9 @@ def strange_function(n):
 print(strange_function(2)) #True
 print(strange_function(1)) #None
 
+#for example this returns None
+def hi():
+    return
+    print("Hi!")
+hi()
 
