@@ -166,3 +166,12 @@ def hi():
     print("Hi!")
 hi()
 
+#first var = 1, then it's global and var = 2. outside of the function, var will be 1.
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
