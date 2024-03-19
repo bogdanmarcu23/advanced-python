@@ -192,3 +192,8 @@ def factorial(n):
 
 print(factorial(4))
 
+#tuples
+#this prints 6
+tup = 1, 2, 3
+a, b, c = tup
+print(a * b * c)
