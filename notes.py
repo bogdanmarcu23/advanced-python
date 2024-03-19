@@ -175,3 +175,20 @@ def my_function():
 var = 1
 my_function()
 print(var)
+
+# Recursive implementation of the factorial function.
+def factorial(n):
+    if n == 1:    # The base case (termination condition.)
+        return 1
+    else:
+        return n * factorial(n - 1)
+        
+print(factorial(4)) # 4 * 3 * 2 * 1 = 24
+
+#without recursive
+#prints: RecursionError: maximum recursion depth exceeded
+def factorial(n):
+    return n * factorial(n - 1)
+
+print(factorial(4))
+
