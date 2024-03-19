@@ -202,3 +202,8 @@ print(a * b * c)
 tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
 duplicates = tup.count(2)
 print(duplicates)    # outputs: 4
+
+#transform tuples into dict
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+colors_dictionary = dict(colors)
+print(colors_dictionary)
