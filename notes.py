@@ -197,3 +197,8 @@ print(factorial(4))
 tup = 1, 2, 3
 a, b, c = tup
 print(a * b * c)
+
+#count the occurrences of 2 in the tuple
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = tup.count(2)
+print(duplicates)    # outputs: 4
