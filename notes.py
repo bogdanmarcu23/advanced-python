@@ -207,3 +207,29 @@ print(duplicates)    # outputs: 4
 colors = (("green", "#008000"), ("blue", "#0000FF"))
 colors_dictionary = dict(colors)
 print(colors_dictionary)
+
+#Errors
+#ValueError
+#Expect this exception when you're dealing with values which may be inappropriately used in some context. 
+#In general, this exception is raised when a function (like int() or float()) receives an argument of a proper type, but its value is unacceptable.
+a = "abc"
+x = int(a)
+
+#TypeError
+#This exception shows up when you try to apply a data whose type cannot be accepted in the current context. Look at the example:
+short_list = [1]
+one_value = short_list[0.5]
+#You're not allowed to use a float value as a list index (the same rule applies to tuples, too). 
+#TypeError is an adequate name to describe the problem, and an adequate exception to raise.
+
+#AttributeError
+#This exception arrives – among other occasions – when you try to activate a method which doesn't exist in an item you're dealing with. For example:
+short_list = [1]
+short_list.append(2)
+short_list.depend(3)
+#The third line of our example attempts to make use of a method which isn’t contained in the lists. This is the place where AttributeError is raised.
+
+#Other errors:
+#ZeroDivisionError
+#SyntaxError
+#KeyboardInterrupt 
