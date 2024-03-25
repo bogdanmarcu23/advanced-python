@@ -230,6 +230,10 @@ short_list.depend(3)
 #The third line of our example attempts to make use of a method which isn’t contained in the lists. This is the place where AttributeError is raised.
 
 #Other errors:
-#ZeroDivisionError
 #SyntaxError
+print(Hello, World!)
+#NameError: 
+print(Hello, World)
+#ZeroDivisionError
+print(5/0)
 #KeyboardInterrupt 
